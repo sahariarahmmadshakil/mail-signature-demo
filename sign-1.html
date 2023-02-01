@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-1</title>
+</head>
+
+<body>
+    <table style="width: 350px; font-size: 9pt; font-family: Arial, sans-serif; line-height:normal;" cellpadding="0"
+        cellspacing="0" class="ng-scope">
+        <tbody>
+            <tr>
+                <td colspan="2" style=" font-size:12pt; font-family:Arial,sans-serif; padding-bottom:6px;  width:340px">
+                    <span style="font-family: Arial, sans-serif; color:#1b7592; font-weight: bold" class="ng-binding">
+                        KAREN GRAVITEQ
+                        <span ng-if="showField('title')"
+                            style="font-family: Arial, sans-serif; color:#1b7592; font-weight: bold" class="ng-scope"> |
+                        </span>
+                    </span><span ng-if="showField('title')"
+                        style="font-family: Arial, sans-serif; color:#1b7592; font-weight: bold"
+                        class="ng-binding ng-scope">Co-Founder and Managing
+                        Partner</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 155px; padding-top: 6px; padding-bottom:6px;">
+                    <table cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr ng-if="showField('phone')" class="ng-scope">
+                                <td style="width: 20px;"><span
+                                        style="width: 20px; font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000;">P:</span>
+                                </td>
+                                <td style="width: 145px;"><span
+                                        style="width: 145px; font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000; font-weight: bold;"
+                                        class="ng-binding">916.848.7650 </span></td>
+                            </tr>
+                            <tr ng-if="showField('email')" class="ng-scope">
+                                <td><span
+                                        style="font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000;">E:</span>
+                                </td>
+                                <td><span><a href="mailto:hello@graviteqgroup.com "
+                                            style="font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000; font-weight: bold; text-decoration: none"><span
+                                                style="font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000; font-weight: bold; text-decoration: none"
+                                                class="ng-binding">hello@graviteqgroup.com </span></a></span></td>
+                            </tr>
+                            <tr ng-if="isAnyFieldEntered('company,address1, address2')" class="ng-scope">
+                                <td style="vertical-align: top; padding-top: 1px; "><span
+                                        style="font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000;">W:</span>
+                                </td>
+                                <td>
+                                    <span ng-if="showField('address2')"
+                                        style="font-size: 9pt; line-height: 13pt; font-family: Arial, sans-serif; color:#100000; font-weight: bold;"
+                                        class="ng-binding ng-scope">graviteqgroup.com</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+
+                <td ng-if="showField('logo')"
+                    style="width:195px; padding-top: 6px; padding-bottom:6px; text-align:right;" class="ng-scope">
+                    <a ng-if="showField('logoURL')" href="https://graviteqgroup.com/" target="_blank"
+                        class="ng-scope"><img border="0" alt="Logo" height="56"
+                            style="max-width: 195px; width:auto; height:36px; border:0;"
+                            ng-src="https://i.postimg.cc/sxKHzgp4/g-logo.png"
+                            src="https://i.postimg.cc/sxKHzgp4/g-logo.png"></a>
+                </td>
+            </tr>
+
+            <tr ng-if="isAnyFieldEntered('website,facebookURL,linkedinURL,twitterURL,youtubeURL,instagramURL,banner,disclaimer')"
+                class="ng-scope">
+                <td style="border-top: 1px solid #1b7592" colspan="2" width="350">
+                </td>
+                
+            </tr>
+            <tr ng-if="isAnyFieldEntered('website,facebookURL,linkedinURL,twitterURL,youtubeURL,instagramURL')"
+                class="ng-scope" >
+                <td style="padding-top: 10px; padding-bottom: 10px; font-size: 10pt; font-family: Arial, sans-serif; font-weight:bold; color: #1b7592; width:355px;"
+                    width="355" colspan="2">
+
+                    Registered Investigator with the CA State
+                    Controller’s Office
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

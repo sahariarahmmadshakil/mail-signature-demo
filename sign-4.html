@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-4</title>
+</head>
+
+<body>
+    <table style="width:450px;" width="450" cellpadding="0" cellspacing="0" class="ng-scope">
+        <tbody style="vertical-align:top;">
+            <tr>
+                <td style="border-bottom:1px solid; border-bottom-color:#4a6481; padding-bottom:10px; padding-top:0; padding-left:0; padding-right:0; vertical-align:bottom; font-family:Verdana, sans-serif; color:#3b4908;"
+                    valign="bottom">
+                    <strong><span style="font-family:Verdana, sans-serif; font-size:14pt; color:#4a6481"
+                            class="ng-binding">KAREN&nbsp;GRAVITEQ</span></strong><br>
+                    <span style="font-family:Verdana, sans-serif; font-size:10pt; color:#444444;"
+                        ng-if="showField('title')" class="ng-scope"><span
+                            style="font-family:Verdana, sans-serif; color:#2c2c2c" class="ng-binding">Co-Founder and
+                            Managing
+                            Partner</span></span>
+                </td>
+                <td ng-if="showField('logo')"
+                    style="border-bottom:1px solid; border-bottom-color:#4a6481; padding-bottom:10px; padding-top:0; padding-left:0; padding-right:0; vertical-align:top; font-family:Verdana, sans-serif; color:#3b4908;"
+                    valign="top" class="ng-scope">
+                    <a ng-if="showField('logoURL')" href="https://graviteqgroup.com/" target="_blank"
+                        class="ng-scope"><img border="0" alt="Logo" width="179"
+                            style="width:179px; height:auto; border:0;"
+                            ng-src="https://i.postimg.cc/sxKHzgp4/g-logo.png"
+                            src="https://i.postimg.cc/sxKHzgp4/g-logo.png"></a>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:60%; padding-top:10px; padding-bottom:0; padding-left:0; padding-right:0; line-height:18px; vertical-align:top; font-family:Verdana, sans-serif; font-size:10pt; color:#444444;"
+                    valign="top" width="60%"><span
+                        style="font-family:Verdana, sans-serif; font-size:10pt; color:#2c2c2c"
+                        ng-if="showField('phone')" class="ng-binding ng-scope">P:
+                        916.848.7650<span ng-if="isAnyFieldEntered('phone, mobile')" class="ng-scope"><br>
+                        </span>
+                        <span style="font-family:Verdana, sans-serif; font-size:10pt; color:#2c2c2c"
+                            ng-if="showField('email')" class="ng-binding ng-scope">E:
+                            hello@graviteqgroup.com
+                        </span>
+                        <span style="font-family:Verdana, sans-serif; font-size:10pt; color:#2c2c2c"
+                            ng-if="showField('website')" class="ng-binding ng-scope">E:
+                           graviteqgroup.com
+                        </span>
+                </td>
+                <td style="width:40%; padding-top:10px; padding-bottom:0; padding-left:0; padding-right:0; line-height:18px; vertical-align:top; font-family:Verdana, sans-serif; font-size:10pt; color:#444444;"
+                    valign="top" width="40%">
+                    <span style="font-family:Verdana, sans-serif; font-size:10pt; color:#2c2c2c"
+                        ng-if="showField('company')" class="ng-binding ng-scope">My
+                        Company<span ng-if="isAnyFieldEntered('address1, address2')" class="ng-scope"><br></span>
+                    </span>
+                    <span style="font-family:Verdana, sans-serif; font-size:10pt; color:#2c2c2c"
+                        ng-if="showField('address2')" class="ng-binding ng-scope">Registered
+                        Investigator with the CA State Controller's
+                        Office</span>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

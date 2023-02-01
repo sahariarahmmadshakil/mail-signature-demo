@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-3</title>
+</head>
+
+<body>
+  <table style="font-family:Verdana, sans-serif;" cellpadding="0" cellspacing="0" class="ng-scope">
+    <tbody>
+      <tr>
+        <td
+          style="border-right:2px solid; border-right-color:#1b7592; padding-right:15px; text-align: right; vertical-align:top;"
+          valign="top">
+          <table style="margin-right:0; margin-left:auto;" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td
+                  style="height:55px; vertical-align:top; text-align:right; font-family:Verdana, sans-serif; color:#444444;"
+                  valign="top" align="right">
+                  <span style="font-family:Verdana, sans-serif; color:#444444; font-size:14pt; font-weight:bold"
+                    class="ng-binding">KAREN GRAVITEQ
+
+                    <span ng-if="showField('title')" class="ng-scope"><br></span></span>
+
+                  <span style="font-family:Verdana, sans-serif; color:#444444; font-size:10pt;"
+                    ng-if="showField('title')" class="ng-binding ng-scope">Co-Founder and Managing Partner</span>
+                </td>
+              </tr>
+              <tr ng-if="isAnyFieldEntered('phone, mobile, address1, address2')" class="ng-scope">
+                <td
+                  style="height:25px; vertical-align:top; padding:0; text-align:right; font-family:Verdana, sans-serif; color:#444444;"
+                  valign="top" align="right"><span
+                    style="font-family:Verdana, sans-serif; color:#444444; font-size:10pt;" ng-if="showField('phone')"
+                    class="ng-binding ng-scope">phone: 916.848.7650 </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+        <td style="padding-left:15px;font-size:1pt; vertical-align:top;" valign="top">
+          <table cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td style="height:55px; vertical-align:top;" valign="top">
+                  <a ng-if="showField('logoURL') &amp;&amp; showField('logo')" href="https://graviteqgroup.com/"
+                    target="_blank" rel="noopener" class="ng-scope"><img
+                      ng-src="https://i.postimg.cc/sxKHzgp4/g-logo.png" alt="logo"
+                      style="height:40px; width:auto; border:0; " height="25" border="0"
+                      src="https://i.postimg.cc/sxKHzgp4/g-logo.png"></a>
+                </td>
+              </tr>
+              <tr ng-if="isAnyFieldEntered('address1, address2, phone, mobile' )" class="ng-scope">
+                <td style="height:25px; vertical-align:top; padding:0; font-family:Verdana, sans-serif; color:#444444;"
+                  valign="top">
+                  <span style="font-family:Verdana, sans-serif; color:#444444; font-size:10pt;"
+                    ng-if="showField('address2')" class="ng-binding ng-scope">Registered Investigator with the CA State
+                    Controller’s Office</span>
+                </td>
+              </tr>
+              <tr ng-if="isAnyFieldEntered('website')" class="ng-scope">
+                <td style="height:20px; vertical-align:middle;" valign="middle">
+                  <a href="http://graviteqgroup.com" target="_blank" rel="noopener" style="text-decoration:none;"><span
+                      style="font-size:10pt; font-family:Verdana, sans-serif; color:#1b7592;"><span
+                        style="color:#1b7592; font-family:Verdana, sans-serif;"
+                        class="ng-binding">graviteqgroup.com</span></span></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
